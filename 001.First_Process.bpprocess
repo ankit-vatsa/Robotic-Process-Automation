@@ -1,0 +1,54 @@
+﻿<process name="First_Process" version="1.0" bpversion="7.3.0.9110" narrative="This is my first process." byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="08fd545f-94b1-4280-99fc-644183bb58c6">
+  <view>
+    <camerax>-39</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="e39241ca-1ebc-4261-b542-56a8fc6f9fe1" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>57b8c853-9218-4047-a9ea-da84a49ff47c</onsuccess>
+  </stage>
+  <stage stageid="6ac6f837-1697-4023-a599-b5609dac9d45" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="81806f3d-dbf9-4bf5-83a1-339179521777" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="57b8c853-9218-4047-a9ea-da84a49ff47c" name="AddScores" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="-135" y="-15" />
+    <onsuccess>22446463-b6fa-453e-aed2-b207003b6c08</onsuccess>
+    <calculation expression="[Data2]+[Data1]" stage="Final score" />
+  </stage>
+  <stage stageid="22446463-b6fa-453e-aed2-b207003b6c08" name="Decision1" type="Decision">
+    <display x="15" y="-15" />
+    <decision expression="[Final score]&gt;2" />
+    <ontrue>6ac6f837-1697-4023-a599-b5609dac9d45</ontrue>
+  </stage>
+  <stage stageid="73bfc0e5-aa58-46bb-be08-67cf370b694f" name="Data1" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-225" y="-30" />
+    <datatype>number</datatype>
+    <initialvalue>6</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="965a40fe-fcb9-41b6-959d-2c1b28c898b0" name="Data2" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-225" y="15" />
+    <datatype>number</datatype>
+    <initialvalue>4</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="595d5bf7-e312-4498-8c73-0545632ecfed" name="Final score" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-225" y="60" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

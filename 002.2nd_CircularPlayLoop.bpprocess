@@ -1,0 +1,59 @@
+﻿<process name="2nd_CircularPlayLoop" version="1.0" bpversion="7.3.0.9110" narrative="Circular trying" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="a8f86cdf-afb9-4e0b-847b-67a433e4920d">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="95ed9800-8671-4330-b673-a2d2abca940c" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>def99572-2095-4f45-be0d-3cf177f72e7a</onsuccess>
+  </stage>
+  <stage stageid="884d67ac-3075-4894-9ae8-1e02d83f6717" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="b43bbd39-4fcb-440f-985c-f01d94db25f6" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="306836e9-4b1d-4a58-9657-a18e604d96f0" name="Decision1" type="Decision">
+    <display x="15" y="30" />
+    <decision expression="[LoopLimit]=[LoopCount]" />
+    <ontrue>884d67ac-3075-4894-9ae8-1e02d83f6717</ontrue>
+    <onfalse>13de2f54-4194-4af2-bed3-c1ece212ce65</onfalse>
+  </stage>
+  <stage stageid="def99572-2095-4f45-be0d-3cf177f72e7a" name="Calc1" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <narrative>It will increase the number of times loop executed</narrative>
+    <display x="15" y="-45" />
+    <onsuccess>306836e9-4b1d-4a58-9657-a18e604d96f0</onsuccess>
+    <calculation expression="[LoopCount]+1" stage="LoopCount" />
+  </stage>
+  <stage stageid="5b59cef2-03a8-4db5-9942-a30b5f0530bc" name="LoopCount" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-165" y="0" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d8dced14-0e18-4949-88a4-0047d29e05b1" name="LoopLimit" type="Data">
+    <loginhibit onsuccess="true" />
+    <narrative>Max number of times loop will run</narrative>
+    <display x="-165" y="60" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="13de2f54-4194-4af2-bed3-c1ece212ce65" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="105" y="30" w="10" h="10" />
+    <onsuccess>4a81d6b2-3ae3-4057-af58-2df615c159f4</onsuccess>
+  </stage>
+  <stage stageid="4a81d6b2-3ae3-4057-af58-2df615c159f4" name="Anchor2" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="105" y="-45" w="10" h="10" />
+    <onsuccess>def99572-2095-4f45-be0d-3cf177f72e7a</onsuccess>
+  </stage>
+</process>

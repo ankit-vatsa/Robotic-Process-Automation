@@ -1,0 +1,75 @@
+﻿<process name="3rd_Loop" version="1.0" bpversion="7.3.0.9110" narrative="Learning loop and collection stage type.&#xD;&#xA;" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="3c85b450-0b74-4710-9e8b-325cc275a995">
+  <view>
+    <camerax>0</camerax>
+    <cameray>42</cameray>
+    <zoom version="2">2.1875</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="b8447585-0ce4-4a68-bdd4-5195611717c5" name="Start" type="Start">
+    <display x="15" y="-120" />
+    <onsuccess>9fcdb06e-01ab-4992-9885-be469b7d10bb</onsuccess>
+  </stage>
+  <stage stageid="1d82a9cd-76f8-4b5a-8424-624571109e7f" name="End" type="End">
+    <display x="15" y="180" />
+  </stage>
+  <stage stageid="eca0af6b-c234-489f-ab95-b57ad66cf6b4" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="6c015e04-8ec6-45bd-9794-a4d09b92c18e" name="Table 1" type="Collection">
+    <display x="-195" y="135" w="90" h="90" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Name" type="text" />
+      <field name="Quantity" type="number" />
+      <field name="Remarks" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="Name" type="text" value="Apple" />
+        <field name="Quantity" type="number" value="10" />
+        <field name="Remarks" type="text" value="New" />
+      </row>
+      <row>
+        <field name="Name" type="text" value="Mango" />
+        <field name="Quantity" type="number" value="4" />
+        <field name="Remarks" type="text" value="Rippen" />
+      </row>
+      <row>
+        <field name="Name" type="text" value="Guava" />
+        <field name="Quantity" type="number" value="3" />
+        <field name="Remarks" type="text" value="Pink" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="301dd9af-e677-48f6-a736-9876239516ca" name="Calc1" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>716f042c-7668-4abb-8074-19ca27b15521</onsuccess>
+    <calculation expression="[Table 1.Quantity]+[LoopCount]" stage="LoopCount" />
+  </stage>
+  <stage stageid="9fcdb06e-01ab-4992-9885-be469b7d10bb" name="Loop Start1" type="LoopStart">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>301dd9af-e677-48f6-a736-9876239516ca</onsuccess>
+    <groupid>39c1da95-9d0e-4736-bfab-2bd6fa7fe9e3</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>Table 1</loopdata>
+  </stage>
+  <stage stageid="716f042c-7668-4abb-8074-19ca27b15521" name="Loop End1" type="LoopEnd">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="90" />
+    <onsuccess>1d82a9cd-76f8-4b5a-8424-624571109e7f</onsuccess>
+    <groupid>39c1da95-9d0e-4736-bfab-2bd6fa7fe9e3</groupid>
+  </stage>
+  <stage stageid="327cd56e-0247-4ef9-bc82-8dd5fad1ea23" name="LoopCount" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-180" y="15" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+</process>
