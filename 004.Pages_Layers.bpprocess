@@ -1,0 +1,80 @@
+﻿<process name="04.Pages_Layers" version="1.0" bpversion="7.3.0.9110" narrative="Layers of pages like functions in general programming language, like functions are kept aside from the original program and called whenever required. Similarly, pages are kept separated from each other and linked as a layer and called by the other pages when required as specified." byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="511f6136-e823-42f7-8605-66df640a733e">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">2.5</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="3dee7301-8bf2-4819-b574-8d5bdf9314c7" type="Normal" published="False">
+    <name>Page 1</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">2.5</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="3bafedbe-17ec-457d-b2cc-dca097400547" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>a7bcf3f2-b57e-4390-8897-03ef103e7814</onsuccess>
+  </stage>
+  <stage stageid="10fee73f-fe98-4af4-9a24-98d66c3b05af" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="b20eb2dc-0140-4321-a103-0e80e483e679" name="LoopCount" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-165" y="-15" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="43f8e227-41b7-4bf0-a2e8-2a3f0b6ffa7d" name="MaxTimes" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-165" y="45" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ecc991b3-682b-43aa-9d5d-f871967489a6" name="Page 1" type="SubSheetInfo">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <narrative>Just Starting the process and Ending, just for testing the page layering behaviour.</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="aee56695-c975-40de-a6d5-dc9ea081d728" name="Start" type="Start">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>cdcc0195-0ac1-4af5-8a21-407b70b61a1c</onsuccess>
+  </stage>
+  <stage stageid="cdcc0195-0ac1-4af5-8a21-407b70b61a1c" name="End" type="End">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="a7bcf3f2-b57e-4390-8897-03ef103e7814" name="Calc1" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>3e4900f8-e0dd-444f-aaf0-babb5256f51e</onsuccess>
+    <calculation expression="[LoopCount]+1" stage="LoopCount" />
+  </stage>
+  <stage stageid="ebdd4640-212e-4749-b21a-a85a8f7e3989" name="End" type="End">
+    <display x="15" y="120" />
+  </stage>
+  <stage stageid="3e4900f8-e0dd-444f-aaf0-babb5256f51e" name="Decision1" type="Decision">
+    <display x="15" y="30" />
+    <decision expression="[LoopCount]=[MaxTimes]" />
+    <ontrue>ebdd4640-212e-4749-b21a-a85a8f7e3989</ontrue>
+    <onfalse>de69c054-2e3e-4412-88e7-97756078278c</onfalse>
+  </stage>
+  <stage stageid="7381ebb3-2048-4a2c-ac47-8a69f44381ba" name="Anchor2" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="105" y="-45" w="10" h="10" />
+    <onsuccess>a7bcf3f2-b57e-4390-8897-03ef103e7814</onsuccess>
+  </stage>
+  <stage stageid="de69c054-2e3e-4412-88e7-97756078278c" name="Page 1" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="120" y="30" />
+    <onsuccess>7381ebb3-2048-4a2c-ac47-8a69f44381ba</onsuccess>
+    <processid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</processid>
+  </stage>
+</process>
