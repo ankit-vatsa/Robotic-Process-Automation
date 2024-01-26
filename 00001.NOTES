@@ -1,1 +1,6 @@
-Note
+Data items - Rhombus shape type -> Can store a single value of a type
+
+Collection stage - Multiple layers of rhombus shape type -> Can store values like a table row
+
+Loops - Can fetch a whole single row at a time in the Collection stage
+
