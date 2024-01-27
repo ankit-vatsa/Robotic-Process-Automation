@@ -9,6 +9,9 @@ Step Over -
 Step Out - 
 
 Global Data Items - Visible to all the pages in the process. These can be of unique names.
+        To create the Global data item: 
+            Click on the data item -> Visibility -> Uncheck Hide from other processes
+
 
 Local Data Items - Visible to only the respective page in which it was made. Two pages can have the data items of the same name.
 
