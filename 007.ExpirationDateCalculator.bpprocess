@@ -1,0 +1,93 @@
+﻿<process name="007.ExpirationDateNotifier" version="1.0" bpversion="7.3.0.9110" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="94b2cffa-ca96-497e-9742-806ff235e908">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">2.5</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="037b885b-3fd4-45e5-b28d-b7d10424ab89" type="Normal" published="False">
+    <name>ExpirationReminder</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">3.125</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="3bafedbe-17ec-457d-b2cc-dca097400547" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>bb78004c-4f15-4497-94d6-64cb811dd360</onsuccess>
+  </stage>
+  <stage stageid="10fee73f-fe98-4af4-9a24-98d66c3b05af" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="b20eb2dc-0140-4321-a103-0e80e483e679" name="Expiration Date" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-135" y="15" />
+    <datatype>date</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ebdd4640-212e-4749-b21a-a85a8f7e3989" name="End" type="End">
+    <display x="15" y="120" />
+  </stage>
+  <stage stageid="4328dc5f-1ec4-4069-9817-17fef937c456" name="ExpirationReminder" type="SubSheetInfo">
+    <subsheetid>037b885b-3fd4-45e5-b28d-b7d10424ab89</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="5202ba15-31cb-4cf2-8adf-c8cb78992236" name="Start" type="Start">
+    <subsheetid>037b885b-3fd4-45e5-b28d-b7d10424ab89</subsheetid>
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="number" name="TrialPeriodDays" narrative="Total no of days for the trial period" stage="TotalNoOfDays" />
+    </inputs>
+    <onsuccess>89dfb78c-1995-40a9-b821-64d11f9c8ebe</onsuccess>
+  </stage>
+  <stage stageid="fac2493b-5d39-4ea0-a83b-e2b15c688545" name="End" type="End">
+    <subsheetid>037b885b-3fd4-45e5-b28d-b7d10424ab89</subsheetid>
+    <display x="15" y="90" />
+    <outputs>
+      <output type="date" name="ExpirationDateExporter" narrative="To send the calculated expiration date to the main page" stage="ExpirationDate" />
+    </outputs>
+  </stage>
+  <stage stageid="bb78004c-4f15-4497-94d6-64cb811dd360" name="ExpirationReminder" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <inputs>
+      <input type="number" name="TrialPeriodDays" friendlyname="TrialPeriodDays" narrative="Total no of days for the trial period" expr="30" />
+    </inputs>
+    <outputs>
+      <output type="date" name="ExpirationDateExporter" friendlyname="ExpirationDateExporter" narrative="To send the calculated expiration date to the main page" stage="Expiration Date" />
+    </outputs>
+    <onsuccess>ebdd4640-212e-4749-b21a-a85a8f7e3989</onsuccess>
+    <processid>037b885b-3fd4-45e5-b28d-b7d10424ab89</processid>
+  </stage>
+  <stage stageid="2271a7d7-220a-4813-b7ae-82a889aa2966" name="TotalNoOfDays" type="Data">
+    <subsheetid>037b885b-3fd4-45e5-b28d-b7d10424ab89</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>To store the incoming variable value from the main page
+</narrative>
+    <display x="-90" y="-45" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="08802e0d-ff8e-4efa-9d33-648d54d85bfc" name="ExpirationDate" type="Data">
+    <subsheetid>037b885b-3fd4-45e5-b28d-b7d10424ab89</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>ExpirationDate storage after the calculation</narrative>
+    <display x="-90" y="30" />
+    <datatype>date</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="89dfb78c-1995-40a9-b821-64d11f9c8ebe" name="Calc1" type="Calculation">
+    <subsheetid>037b885b-3fd4-45e5-b28d-b7d10424ab89</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <onsuccess>fac2493b-5d39-4ea0-a83b-e2b15c688545</onsuccess>
+    <calculation expression="AddDays(Today(), [TotalNoOfDays])" stage="ExpirationDate" />
+  </stage>
+</process>
