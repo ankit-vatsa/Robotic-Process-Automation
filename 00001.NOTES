@@ -1,3 +1,7 @@
+PROCESS STUDIO:
+        Used for the development and testing of the Process Diagrams.
+        
+
 Data items - Rhombus shape type -> Can store a single value of a type
 
 Collection stage - Multiple layers of rhombus shape type -> Can store values like a table row
