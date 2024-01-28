@@ -1,0 +1,104 @@
+﻿<process name="006.GlobalLocal" version="1.0" bpversion="7.3.0.9110" narrative="Layers of pages like functions in general programming language, like functions are kept aside from the original program and called whenever required. Similarly, pages are kept separated from each other and linked as a layer and called by the other pages when required as specified." byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="807352f0-d405-4126-a737-70580675ccc1">
+  <view>
+    <camerax>0</camerax>
+    <cameray>42</cameray>
+    <zoom version="2">2.5</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="3dee7301-8bf2-4819-b574-8d5bdf9314c7" type="Normal" published="False">
+    <name>Page 1</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">2.5</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="3bafedbe-17ec-457d-b2cc-dca097400547" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>9c190112-cbd4-4d4f-8222-6f5da804c569</onsuccess>
+  </stage>
+  <stage stageid="10fee73f-fe98-4af4-9a24-98d66c3b05af" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="b20eb2dc-0140-4321-a103-0e80e483e679" name="MaxNoOfTimes" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-150" y="15" />
+    <datatype>number</datatype>
+    <initialvalue>6</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="ecc991b3-682b-43aa-9d5d-f871967489a6" name="Page 1" type="SubSheetInfo">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <narrative>Just Starting the process and Ending, just for testing the page layering behaviour.</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="ebdd4640-212e-4749-b21a-a85a8f7e3989" name="End" type="End">
+    <display x="15" y="120" />
+  </stage>
+  <stage stageid="3617bad6-9123-4c01-b42e-7fca80ad3c94" name="Start" type="Start">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <display x="0" y="-105" />
+    <inputs>
+      <input type="number" name="InputfromMainPage" narrative="For maximum loop count" stage="MaxTimes" />
+    </inputs>
+    <onsuccess>923bc8ef-5dbd-42f8-ac5f-84fa540537ec</onsuccess>
+  </stage>
+  <stage stageid="815b165c-23a6-4738-8982-876b8da89a3e" name="LoopCount" type="Data">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-180" y="-15" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ca0e09b8-4a3b-4495-997b-22c6a9d4b2b8" name="MaxTimes" type="Data">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-180" y="45" />
+    <datatype>number</datatype>
+    <initialvalue>5</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="923bc8ef-5dbd-42f8-ac5f-84fa540537ec" name="Calc1" type="Calculation">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="0" y="-45" />
+    <onsuccess>0f533af4-f6f6-48cb-b1e9-697a631ea139</onsuccess>
+    <calculation expression="[LoopCount]+1" stage="LoopCount" />
+  </stage>
+  <stage stageid="649ae2fb-2b35-4451-9fe2-872769605d57" name="End" type="End">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <display x="0" y="120" />
+  </stage>
+  <stage stageid="0f533af4-f6f6-48cb-b1e9-697a631ea139" name="Decision1" type="Decision">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <display x="0" y="30" />
+    <decision expression="[LoopCount]=[MaxNoOfTimes]" />
+    <ontrue>649ae2fb-2b35-4451-9fe2-872769605d57</ontrue>
+    <onfalse>9667e95b-c336-4bc2-98b4-fe48723bd40a</onfalse>
+  </stage>
+  <stage stageid="51f7a6a8-f37c-42aa-bd44-a201235f6d40" name="Anchor2" type="Anchor">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="90" y="-45" w="10" h="10" />
+    <onsuccess>923bc8ef-5dbd-42f8-ac5f-84fa540537ec</onsuccess>
+  </stage>
+  <stage stageid="9667e95b-c336-4bc2-98b4-fe48723bd40a" name="Anchor1" type="Anchor">
+    <subsheetid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="90" y="30" w="10" h="10" />
+    <onsuccess>51f7a6a8-f37c-42aa-bd44-a201235f6d40</onsuccess>
+  </stage>
+  <stage stageid="9c190112-cbd4-4d4f-8222-6f5da804c569" name="Page 1" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <inputs>
+      <input type="number" name="InputfromMainPage" friendlyname="InputfromMainPage" narrative="For maximum loop count" expr="[MaxNoOfTimes]" />
+    </inputs>
+    <onsuccess>ebdd4640-212e-4749-b21a-a85a8f7e3989</onsuccess>
+    <processid>3dee7301-8bf2-4819-b574-8d5bdf9314c7</processid>
+  </stage>
+</process>
