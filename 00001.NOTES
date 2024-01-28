@@ -21,9 +21,12 @@ Collection stage
 Loops         
         - Can fetch a whole single row at a time in the Collection stage
 
-Step Over - 
+Step Over 
+        - Step Over moves past a Page Reference Stage in one step. The logic on the Sub-Page will be executed without the need to step through every Stage on that Page. 
 
-Step Out - 
+Step Out 
+        - Step Out can be used on any Stage within a Process to execute the remaining Stages on the current Page, then move back to the upper Page.
+
 
 STARTUP PARAMETER       
         - External input that is to be provided to the process at the starting of the process
