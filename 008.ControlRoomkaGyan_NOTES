@@ -18,3 +18,9 @@ RESOURCES SECTION
 ENVIRONMENT SECTION
   - Enlists all the sessions that is running, stopped or terminated. 
 
+SESSION EXCEPTION
+        - Errors raised when there is fault in the processes.
+        - In the environment section, processes can be seen as TERMINATED in the Status.
+
+SESSION LOG
+        - Session exception logs can be seen in the Environment Section by simply right clicking the sessions/processes.
