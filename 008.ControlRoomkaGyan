@@ -1,0 +1,20 @@
+CONTROL ROOM:        
+        - In a production environment, processes are not run from the process studio, but from the another area of the BluePrism caleed as Control Room.
+        - These process doesn not run on the version of the BluePrism local to your desktop.
+        - But instead run on an external resource known as a DIGITAL WORKER. 
+        - A process run from the control room is called the session. 
+        - And each of these sessions is assigned to a Digital Worker. 
+        - This control room ensures that the processes are run on the Secure, efficient and manageable environment.
+
+TO PUBLISH ANY PROCESS TO THE CONTROL ROOM FROM THE PROCESS STUDIO: 
+        - Open a process in the Studio -> Click on the Information box in the Main Page of the process -> In the left bottom of that information box --> Check the check box to publish to the Control Room.
+
+AVAILABLE ENTERPRISE PROCESSES SECTION 
+  - Enlists all the published processes that are ready to be used with the Digital Worker.
+
+RESOURCES SECTION
+  - Enlists all the available Digital Workers.
+
+ENVIRONMENT SECTION
+  - Enlists all the sessions that is running, stopped or terminated. 
+
