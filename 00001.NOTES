@@ -26,7 +26,8 @@ Step Over -
 Step Out - 
 
 STARTUP PARAMETER       
-        - External input that is to be provided to the 
+        - External input that is to be provided to the process at the starting of the process
+        - Click on Start of the Main Page -> Add Input Variable and Name it -> Define where to store its value
 
 Global Data Items 
         - Visible to all the pages in the process. These can be of unique names.
