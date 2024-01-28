@@ -9,6 +9,8 @@ CONTROL ROOM:
         And each of these sessions is assigned to a Digital Worker. 
         This control room ensures that the processes are run on the Secure, efficient and manageable environment.
 
+TO PUBLISH ANY PROCESS TO THE CONTROL ROOM FROM THE PROCESS STUDIO: 
+        Open a process in the Studio -> Click on the Information box in the Main Page of the process -> In the left bottom of that information box --> Check the check box to publish to the Control Room.
 
 Data items - Rhombus shape type -> Can store a single value of a type
 
