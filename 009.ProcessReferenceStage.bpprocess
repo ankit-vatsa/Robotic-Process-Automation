@@ -1,0 +1,37 @@
+﻿<process name="009.ProcessReferenceStage" version="1.0" bpversion="7.3.0.9110" narrative="Using process reference stage to connect the different processes (earlier we were using the PAGE reference stage to connect different pages WITHIN the Process). This time we are connecting two or more different pages and using them as the sub pages." byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="fed59cc9-4a67-465e-bc0b-a665b0600a14">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="38b0a8fe-66bd-4c57-984f-2a66d36c68ed" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>26ad4252-b494-41fc-87d5-f339daa2643c</onsuccess>
+  </stage>
+  <stage stageid="982ebacd-5a3f-44ac-ba03-9cec794faafc" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="c12812c3-aed6-4340-b790-31aed40e6f11" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="26ad4252-b494-41fc-87d5-f339daa2643c" name="Process1" type="Process">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <outputs>
+      <output type="date" name="ExpirationDateOutput" friendlyname="ExpirationDateOutput" stage="Store Output" />
+    </outputs>
+    <onsuccess>982ebacd-5a3f-44ac-ba03-9cec794faafc</onsuccess>
+    <processid>94b2cffa-ca96-497e-9742-806ff235e908</processid>
+  </stage>
+  <stage stageid="ded4d5d5-7e4a-4db6-a467-5019facd40b1" name="Store Output" type="Data">
+    <loginhibit onsuccess="true" />
+    <narrative>To store the output of the process accessed through the Process Reference Stage.</narrative>
+    <display x="-120" y="0" />
+    <datatype>date</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>
