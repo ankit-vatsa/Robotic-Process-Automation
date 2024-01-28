@@ -1,31 +1,39 @@
 PROCESS STUDIO:
-        Used for the development and testing of the Process Diagrams.
+        - Used for the development and testing of the Process Diagrams.
 
 CONTROL ROOM:        
-        In a production environment, processes are not run from the process studio, but from the another area of the BluePrism caleed as Control Room.
-        These process doesn not run on the version of the BluePrism local to your desktop.
-        But instead run on an external resource known as a digital worker. 
-        A process run from the control room is called the session. 
-        And each of these sessions is assigned to a Digital Worker. 
-        This control room ensures that the processes are run on the Secure, efficient and manageable environment.
+        - In a production environment, processes are not run from the process studio, but from the another area of the BluePrism caleed as Control Room.
+        - These process doesn not run on the version of the BluePrism local to your desktop.
+        - But instead run on an external resource known as a digital worker. 
+        - A process run from the control room is called the session. 
+        - And each of these sessions is assigned to a Digital Worker. 
+        - This control room ensures that the processes are run on the Secure, efficient and manageable environment.
 
 TO PUBLISH ANY PROCESS TO THE CONTROL ROOM FROM THE PROCESS STUDIO: 
-        Open a process in the Studio -> Click on the Information box in the Main Page of the process -> In the left bottom of that information box --> Check the check box to publish to the Control Room.
+        - Open a process in the Studio -> Click on the Information box in the Main Page of the process -> In the left bottom of that information box --> Check the check box to publish to the Control Room.
 
-Data items - Rhombus shape type -> Can store a single value of a type
+Data items 
+        - Rhombus shape type -> Can store a single value of a type
 
-Collection stage - Multiple layers of rhombus shape type -> Can store values like a table row
+Collection stage 
+        - Multiple layers of rhombus shape type -> Can store values like a table row
 
-Loops - Can fetch a whole single row at a time in the Collection stage
+Loops         
+        - Can fetch a whole single row at a time in the Collection stage
 
 Step Over - 
 
 Step Out - 
 
-Global Data Items - Visible to all the pages in the process. These can be of unique names.
-        To create the Global data item: 
+STARTUP PARAMETER       
+        - External input that is to be provided to the 
+
+Global Data Items 
+        - Visible to all the pages in the process. These can be of unique names.
+        
+        - To create the Global data item: 
             Click on the data item -> Visibility -> Uncheck Hide from other processes
 
-
-Local Data Items - Visible to only the respective page in which it was made. Two pages can have the data items of the same name.
+Local Data Items 
+        - Visible to only the respective page in which it was made. Two pages can have the data items of the same name.
 
