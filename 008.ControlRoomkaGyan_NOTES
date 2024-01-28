@@ -9,6 +9,8 @@ CONTROL ROOM:
 TO PUBLISH ANY PROCESS TO THE CONTROL ROOM FROM THE PROCESS STUDIO: 
         - Open a process in the Studio -> Click on the Information box in the Main Page of the process -> In the left bottom of that information box --> Check the check box to publish to the Control Room.
 
+- If a Process has been configured to require a Startup Parameter, then the user can input the value after clicking the Process and clicking Start Selected Sessions.
+
 AVAILABLE ENTERPRISE PROCESSES SECTION 
   - Enlists all the published processes that are ready to be used with the Digital Worker.
 
