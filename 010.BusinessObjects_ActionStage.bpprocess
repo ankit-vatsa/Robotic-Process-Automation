@@ -1,0 +1,40 @@
+﻿<process name="010.BusinessObjects" version="1.0" bpversion="7.3.0.9110" narrative="To learn about the Business Objects" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="0efc650e-38e2-442d-9bab-075d1f3e657e">
+  <view>
+    <camerax>33</camerax>
+    <cameray>20</cameray>
+    <zoom version="2">2.5</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="6deacec5-e8e8-4d7d-80de-ad76cef56c72" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>a57bfae0-772b-4bab-8ed4-20cdf71452b6</onsuccess>
+  </stage>
+  <stage stageid="22ac529e-975f-4340-8457-d8864fded053" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="a57bfae0-772b-4bab-8ed4-20cdf71452b6" name="Notepad::Launch" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>29647265-c17f-48b7-ba48-8e6bc03d75f4</onsuccess>
+    <resource object="Notepad" action="Launch" />
+  </stage>
+  <stage stageid="b7f2d255-6432-4474-8597-dd8255e14c31" name="End" type="End">
+    <display x="15" y="150" />
+  </stage>
+  <stage stageid="4cf4bc94-d016-4a2a-b8bb-0038dc002c76" name="Notepad::Close" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="90" />
+    <onsuccess>b7f2d255-6432-4474-8597-dd8255e14c31</onsuccess>
+    <resource object="Notepad" action="Close" />
+  </stage>
+  <stage stageid="29647265-c17f-48b7-ba48-8e6bc03d75f4" name="Action1" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <inputs>
+      <input type="text" name="Note Text" friendlyname="Note Text" narrative="The text to write" expr="&quot;Hello World&quot;" />
+    </inputs>
+    <onsuccess>4cf4bc94-d016-4a2a-b8bb-0038dc002c76</onsuccess>
+    <resource object="Notepad" action="Write" />
+  </stage>
+</process>
