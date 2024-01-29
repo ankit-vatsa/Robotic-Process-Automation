@@ -41,3 +41,13 @@ Global Data Items
 Local Data Items 
         - Visible to only the respective page in which it was made. Two pages can have the data items of the same name.
 
+BUSINESS OBJECTS
+
+- Provides processes with the functionality to interact with the applications.
+- Capture the functionality of the application
+
+Helps to work with the operational environments to work with the databases and applications.
+By interacting with the parallel type of the diagram similar to the processes we can interact with the operational environments.
+
+Tasks in the Business Object Diagram are separated out in the different pages known as actions.
+
