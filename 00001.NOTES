@@ -56,3 +56,9 @@ To implement the Business Objects in a existing process, use ACTION diagram in t
 
 APPLICATION MODELLER
         - In the Object Studio, can be used to create a logical representation of an application by identifying and capturing elements from its user interface.
+
+Create object -> Click on Application Modeller on top of the workspace -> Define a new application model -> Provide application name (here CentricDataSolutions application) -> Local Application -> Windows Application -> My application is launched from an executable file -> Select the path of the file -> Next -> Finish -> Application Modeller Window will appear
+
+Application Explorer part is having : Tree of all the elements that have been defined for your Business Objects.
+Right side part : List of the attributes that have been identified for each element. which are the specific characteristics of that area of the user interface. These attributes are provided to the BluePrism.
+
