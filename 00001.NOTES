@@ -51,3 +51,4 @@ By interacting with the parallel type of the diagram similar to the processes we
 
 Tasks in the Business Object Diagram are separated out in the different pages known as actions.
 
+To implement the Business Objects in a existing process, use ACTION diagram in the process.
