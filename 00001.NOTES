@@ -62,3 +62,5 @@ Create object -> Click on Application Modeller on top of the workspace -> Define
 Application Explorer part is having : Tree of all the elements that have been defined for your Business Objects.
 Right side part : List of the attributes that have been identified for each element. which are the specific characteristics of that area of the user interface. These attributes are provided to the BluePrism.
 Click launch -> Begin identify/spy the elements of the User Interface -> Wait for the application to appear -> Select Element 1 -> Click Identify -> Now, if we move the mouse over the application window, we can see the red box appearing over the surface we can see the Application Modeller exploring the structure of the application window.
+
+CTRL + RIGHT CLICK -> To exit the spy/exploring mode
