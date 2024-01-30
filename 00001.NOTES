@@ -64,3 +64,7 @@ Right side part : List of the attributes that have been identified for each elem
 Click launch -> Begin identify/spy the elements of the User Interface -> Wait for the application to appear -> Select Element 1 -> Click Identify -> Now, if we move the mouse over the application window, we can see the red box appearing over the surface we can see the Application Modeller exploring the structure of the application window.
 
 CTRL + RIGHT CLICK -> To exit the spy/exploring mode
+
+CTRL + LEFT CLICK -> To select the attributes available in the user interface of the application.
+
+Refer Image011.01.jpg
