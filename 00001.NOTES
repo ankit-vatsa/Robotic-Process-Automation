@@ -57,6 +57,8 @@ To implement the Business Objects in a existing process, use ACTION diagram in t
 APPLICATION MODELLER
         - In the Object Studio, can be used to create a logical representation of an application by identifying and capturing elements from its user interface.
 
+SETUP TO LAUNCH AN APPLICATION: 
+
 Create object -> Click on Application Modeller on top of the workspace 
         -> Define a new application model         
         -> Provide application name (here CentricDataSolutions application) 
@@ -76,11 +78,22 @@ CTRL + LEFT CLICK -> To select the attributes available in the user interface of
 
 Refer Image011.01.png
 
+TO DEFINE ATTRIBUTES
 Application Modeller -> Identify and Capture the UI of the application 
         -> When app get Launched hover cursor on the UI 
         -> CTRL + Left Click 
         -> Element detail area will get populated with the information and the attributes specific to the element (UI that we launched) get the MATCH check box checked 
         -> Blue Prism cannot define structure of every application it interacts with to create a unique element it needs 
-        -> Initial attribute list selected(check box auto marked) are only suggestions and not a definition. Attributes can be edited by checking or unchecking the match column.
-
-
+        -> Initial attribute list selected(check box auto marked) are only suggestions and not a definition. Attributes can be edited by checking or unchecking the MATCH column.
+        -> Press the highlight button to instruct the Application Modeller to find the element.
+        -> Rename the element according to the interface area.
+        -> Press Ok -> Save the Business Object
+NAVIGATE STAGE
+        -> Go to Action1 page
+        -> Rename the actions to communicate its purpose -> Click on Page Information -> Change the Name -> Also provide the Preconditions(app state before performing the action on app) and Postconditions(after operating the app).
+        -> Drag drop Navigate diagram to workspace -> Double click to open its properties
+        -> Rename the stage
+        -> In the left hand side column of properties we can find the Elements List available from the Application Modeller.
+        -> Drag and drop whole component from left to right hand column (action area) of the window.
+        -> Change the Actions (depending on the type of actions assigned options will appear). -> Here, select LAUNCH. Similarly, make a page for CLOSE.
+        -> 
