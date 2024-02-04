@@ -57,11 +57,18 @@ To implement the Business Objects in a existing process, use ACTION diagram in t
 APPLICATION MODELLER
         - In the Object Studio, can be used to create a logical representation of an application by identifying and capturing elements from its user interface.
 
-Create object -> Click on Application Modeller on top of the workspace -> Define a new application model -> Provide application name (here CentricDataSolutions application) -> Local Application -> Windows Application -> My application is launched from an executable file -> Select the path of the file -> Next -> Finish -> Application Modeller Window will appear
+Create object -> Click on Application Modeller on top of the workspace 
+        -> Define a new application model         
+        -> Provide application name (here CentricDataSolutions application) 
+        -> Local Application -> Windows Application 
+        -> My application is launched from an executable file 
+        -> Select the path of the file -> Next -> Finish -> Application Modeller Window will appear
 
 Application Explorer part is having : Tree of all the elements that have been defined for your Business Objects.
 Right side part : List of the attributes that have been identified for each element. which are the specific characteristics of that area of the user interface. These attributes are provided to the BluePrism.
-Click launch -> Begin identify/spy the elements of the User Interface -> Wait for the application to appear -> Select Element 1 -> Click Identify -> Now, if we move the mouse over the application window, we can see the red box appearing over the surface we can see the Application Modeller exploring the structure of the application window.
+Click launch -> Begin identify/spy the elements of the User Interface 
+        -> Wait for the application to appear -> Select Element 1 -> Click Identify 
+        -> Now, if we move the mouse over the application window, we can see the red box appearing over the surface we can see the Application Modeller exploring the structure of the application window.
 
 CTRL + RIGHT CLICK -> To exit the spy/exploring mode
 
@@ -69,6 +76,11 @@ CTRL + LEFT CLICK -> To select the attributes available in the user interface of
 
 Refer Image011.01.png
 
-Application Modeller -> Identify and Capture the UI of the application -> When app get Launched hover cursor on the UI -> CTRL + Left Click -> Element detail area will get populated with the information and the attributes specific to the element (UI that we launched) get the MATCH check box checked 
--> Blue Prism cannot define structure of every application it interacts with to create a unique element it needs -> Initial attribute list selected(check box auto marked) are only suggestions and not a definition. Attributes can be edited by checking or unchecking the match column.
+Application Modeller -> Identify and Capture the UI of the application 
+        -> When app get Launched hover cursor on the UI 
+        -> CTRL + Left Click 
+        -> Element detail area will get populated with the information and the attributes specific to the element (UI that we launched) get the MATCH check box checked 
+        -> Blue Prism cannot define structure of every application it interacts with to create a unique element it needs 
+        -> Initial attribute list selected(check box auto marked) are only suggestions and not a definition. Attributes can be edited by checking or unchecking the match column.
+
 
