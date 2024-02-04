@@ -95,5 +95,6 @@ NAVIGATE STAGE
         -> Rename the stage
         -> In the left hand side column of properties we can find the Elements List available from the Application Modeller.
         -> Drag and drop whole component from left to right hand column (action area) of the window.
-        -> Change the Actions (depending on the type of actions assigned options will appear). -> Here, select LAUNCH. Similarly, make a page for CLOSE.
-        -> 
+        -> Change the Actions (depending on the type of actions assigned options will appear). -> Here, select LAUNCH. 
+        -> A list of inputs that can be used with that action will be appeared on the Input section of the window below.
+        -> Similarly, make a page for CLOSE.
