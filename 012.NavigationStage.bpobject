@@ -1,0 +1,295 @@
+﻿<process name="To open an app - Basic actions" version="1.0" bpversion="7.3.0.9110" narrative="To create a business object to interact with an application." byrefcollection="true" processrunningmessage="" disableversioning="false" type="object" runmode="Exclusive" preferredid="83ab57a1-7d83-479a-9ee4-82abe252af02">
+  <appdef>
+    <element name="To open an app - Basic actions">
+      <id>3c62675e-4a4c-459d-98e1-da15fdaa9e44</id>
+      <element name="LogInInterface">
+        <id>cef10c1a-84fa-4f1c-b61e-27b0335501fd</id>
+        <type>Window</type>
+        <basetype>Window</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="WindowText" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="text" value="Centrix Data Solutions - Please Log In" />
+          </attribute>
+          <attribute name="ClassName" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="text" value="WindowsForms10.Window" />
+          </attribute>
+          <attribute name="CtrlID" isUserVisible="True">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="X" isUserVisible="True">
+            <ProcessValue datatype="number" value="260" />
+          </attribute>
+          <attribute name="Y" isUserVisible="True">
+            <ProcessValue datatype="number" value="260" />
+          </attribute>
+          <attribute name="Width" isUserVisible="True">
+            <ProcessValue datatype="number" value="365" />
+          </attribute>
+          <attribute name="Height" isUserVisible="True">
+            <ProcessValue datatype="number" value="509" />
+          </attribute>
+          <attribute name="Visible" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="ScreenVisible" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Enabled" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Active" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Ordinal" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="ChildCount" isUserVisible="True">
+            <ProcessValue datatype="number" value="8" />
+          </attribute>
+          <attribute name="AncestorsText" isUserVisible="True">
+            <ProcessValue datatype="text" value="&lt;UNKNOWN&gt; " />
+          </attribute>
+          <attribute name="AncestorCount" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="TypeName" isUserVisible="True">
+            <ProcessValue datatype="text" value="WindowsForms10.Window.8.app.0.141b42a_r8_ad1" />
+          </attribute>
+          <attribute name="ScreenBounds" isUserVisible="True">
+            <ProcessValue datatype="text" value="RECT:268,291,760,616" />
+          </attribute>
+          <attribute name="Style" isUserVisible="True">
+            <ProcessValue datatype="number" value="382205952" />
+          </attribute>
+          <attribute name="matchindex" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="matchreverse" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>Win32Launch</id>
+      <parameters>
+        <parameter>
+          <name>Path</name>
+          <value>C:\BluePrism\Training\Applications\Windows\CentrixDataSolutions.exe</value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>WorkingDirectory</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>NonInvasive</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+        <parameter>
+          <name>Options</name>
+          <value>
+          </value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.875</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="3c0be740-1ef5-4b86-bcb8-2284f54616ad" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="baada86f-e00b-4d95-bf9e-d02e74dcda59" type="Normal" published="False">
+    <name>Launch</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>-21</cameray>
+      <zoom version="2">2.5</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="3055f947-624c-402c-a54d-bc01e24fb318" type="Normal" published="False">
+    <name>Close</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>-21</cameray>
+      <zoom version="2">2.5</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="278327dc-15e6-460e-a519-6c17ff1bca8a" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>b2b4c349-aa88-4e9d-a405-30c6546af9be</onsuccess>
+  </stage>
+  <stage stageid="b2b4c349-aa88-4e9d-a405-30c6546af9be" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="86c4dcab-fa72-4533-991a-b3a5049b04fd" name="Stage1" type="ProcessInfo">
+    <display x="-225" y="-150" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="28a072d1-a920-462d-a6d2-9fabbb2b5f69" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>3c0be740-1ef5-4b86-bcb8-2284f54616ad</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="81e6dcb6-7053-457f-9ba2-3e938ba8f4ee" name="Start" type="Start">
+    <subsheetid>3c0be740-1ef5-4b86-bcb8-2284f54616ad</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>6c087f3f-2e65-4306-858e-300ac631eedf</onsuccess>
+  </stage>
+  <stage stageid="6c087f3f-2e65-4306-858e-300ac631eedf" name="End" type="End">
+    <subsheetid>3c0be740-1ef5-4b86-bcb8-2284f54616ad</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="f0531edc-1582-4646-9ac8-a907814e8a72" name="Launch" type="SubSheetInfo">
+    <subsheetid>baada86f-e00b-4d95-bf9e-d02e74dcda59</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="12ab9557-a643-4772-84aa-808feced9e18" name="Start" type="Start">
+    <subsheetid>baada86f-e00b-4d95-bf9e-d02e74dcda59</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>537b9b65-bef1-4b1f-93d4-2e06bcabe6b0</onsuccess>
+  </stage>
+  <stage stageid="ffb26781-6507-494b-983b-063547a36c91" name="End" type="End">
+    <subsheetid>baada86f-e00b-4d95-bf9e-d02e74dcda59</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="e954d47c-2596-47f9-b68d-34a7c94af6fa" name="" type="Note">
+    <subsheetid>3c0be740-1ef5-4b86-bcb8-2284f54616ad</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="95efd622-89be-466f-848d-24e2d569837d" name="" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-225" y="30" w="180" h="230" />
+  </stage>
+  <stage stageid="537b9b65-bef1-4b1f-93d4-2e06bcabe6b0" name="Launch" type="Navigate">
+    <subsheetid>baada86f-e00b-4d95-bf9e-d02e74dcda59</subsheetid>
+    <loginhibit />
+    <display x="15" y="-15" />
+    <onsuccess>ffb26781-6507-494b-983b-063547a36c91</onsuccess>
+    <step>
+      <element id="3c62675e-4a4c-459d-98e1-da15fdaa9e44" />
+      <action>
+        <id>Launch</id>
+        <arguments>
+          <argument>
+            <id>Path</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>CommandLineParams</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>WorkingDirectory</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>NonInvasive</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessMode</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>Options</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="c3a1c75f-47fb-4886-9f1a-a13d5c42d7db" name="Close" type="SubSheetInfo">
+    <subsheetid>3055f947-624c-402c-a54d-bc01e24fb318</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="324aae0f-4617-4f0c-817b-46d8373615f1" name="Start" type="Start">
+    <subsheetid>3055f947-624c-402c-a54d-bc01e24fb318</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>4462de9c-b4ce-4c98-ae37-05caf3279fe9</onsuccess>
+  </stage>
+  <stage stageid="e1ba5f6b-cbc4-40a6-9259-622d5bb86642" name="End" type="End">
+    <subsheetid>3055f947-624c-402c-a54d-bc01e24fb318</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="4462de9c-b4ce-4c98-ae37-05caf3279fe9" name="Close" type="Navigate">
+    <subsheetid>3055f947-624c-402c-a54d-bc01e24fb318</subsheetid>
+    <loginhibit />
+    <display x="15" y="-15" />
+    <onsuccess>e1ba5f6b-cbc4-40a6-9259-622d5bb86642</onsuccess>
+    <step>
+      <element id="3c62675e-4a4c-459d-98e1-da15fdaa9e44" />
+      <action>
+        <id>Terminate</id>
+      </action>
+    </step>
+  </stage>
+</process>
