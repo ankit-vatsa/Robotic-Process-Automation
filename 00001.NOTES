@@ -112,4 +112,4 @@ WAIT STAGE
         -> MUST INCLUDE EXCEPTION STAGE after the timeout, otherwise action will terminate by reaching the timeout.
         -> A timeout set the maximum duration for pause to allow wait condition to be met. - Always overestimate the required timeout time
         -> Click on Wait Stage properties 
-        -> 
+        -> Below we can find the timeout time. Can change it from there. 
