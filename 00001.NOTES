@@ -98,3 +98,18 @@ NAVIGATE STAGE
         -> Change the Actions (depending on the type of actions assigned options will appear). -> Here, select LAUNCH. 
         -> A list of inputs that can be used with that action will be appeared on the Input section of the window below.
         -> Similarly, make a page for CLOSE.
+
+WAIT STAGE
+        -> Enables Business Object to wait for the application to load or a condition to be met.
+        -> Check if the certain application exist.
+        -> Adding Wait Stage in Launch diagram of our business object application launch.
+        -> Wait stage has two componenets: Wait and Timeout they are always connected to each other.
+        -> Click on Wait stage -> Open wait stage properties windows -> Rename the function
+        -> Create a condition to check if the Login Windows exists
+        -> From the list of elements (left side), drag drop element to the Right side Element 
+        -> In the condition menu, select Check Exists.
+        -> CIRCULAR NODE WILL APPEAR between the Wait and Time Out NODE.
+        -> MUST INCLUDE EXCEPTION STAGE after the timeout, otherwise action will terminate by reaching the timeout.
+        -> A timeout set the maximum duration for pause to allow wait condition to be met. - Always overestimate the required timeout time
+        -> Click on Wait Stage properties 
+        -> 
